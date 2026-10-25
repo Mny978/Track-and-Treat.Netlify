@@ -1865,6 +1865,26 @@
         root.render(
           React.createElement(React.StrictMode, null, React.createElement(App))
         );
-    </script>
+        <!-- Firebase SDKs -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-analytics.js"></script>
+
+<script>
+  // Your Firebase config
+  const firebaseConfig = {
+    apiKey: "AIzaSyAiIBgtnVlc6FhXGnluCuUnOepPNYNZJx4",
+    authDomain: "track-and-treat.firebaseapp.com",
+    databaseURL: "https://track-and-treat-default-rtdb.firebaseio.com",
+    projectId: "track-and-treat",
+    storageBucket: "track-and-treat.firebasestorage.app",
+    messagingSenderId: "985512758724",
+    appId: "1:985512758724:web:340ed807f69ee630876891",
+    measurementId: "G-0PZ083F7MN"
+  };
+  // Initialize Firebase + Analytics
+  const app = firebase.initializeApp(firebaseConfig);
+  const analytics = firebase.analytics();
+</script>
 </body>
 </html>
+ 
